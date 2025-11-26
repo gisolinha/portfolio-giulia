@@ -22,3 +22,5 @@ export interface Skill {
   category: 'Language' | 'Engine' | 'Tool' | 'Soft Skill';
   level: number; // 0-100
 }
+
+//teste 
