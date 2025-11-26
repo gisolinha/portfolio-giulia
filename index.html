@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giulia Aragão | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gh: {
+                bg: '#0d1117',
+                card: '#161b22',
+                border: '#30363d',
+                text: '#c9d1d9',
+                muted: '#8b949e',
+                blue: '#58a6ff',
+                green: '#2ea043',
+                pink: '#FF91AF', // Updated to the specific pink from README
+                purple: '#bc8cff',
+                yellow: '#e3b341'
+              }
+            },
+            fontFamily: {
+              pixel: ['"Pixelify Sans"', 'sans-serif'],
+              console: ['"VT323"', 'monospace'],
+              sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0d1117;
+        color: #c9d1d9;
+        font-family: 'VT323', monospace; /* Default to console font */
+        font-size: 1.2rem;
+      }
+      h1, h2, h3, h4, .font-pixel {
+        font-family: 'Pixelify Sans', sans-serif;
+      }
+      /* Custom Scrollbar to match theme */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0d1117; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #30363d; 
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FF91AF; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
